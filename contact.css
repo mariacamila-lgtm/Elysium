@@ -1,0 +1,98 @@
+/* Importamos la base */
+@import url('style.css');
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    padding: 150px 80px 80px 80px;
+    gap: 100px;
+}
+
+.contact-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    line-height: 1.1;
+    margin: 20px 0 60px 0;
+}
+
+.office-location {
+    margin-bottom: 40px;
+}
+
+.office-location h3 {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.office-location p {
+    color: var(--text-dim);
+    font-weight: 300;
+}
+
+/* Estilo del Formulario */
+.contact-form-section {
+    background: var(--secondary-black);
+    padding: 60px;
+    border: 1px solid #222;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    color: var(--text-dim);
+    margin-bottom: 10px;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #333;
+    color: white;
+    padding: 10px 0;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    transition: var(--transition);
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-bottom-color: var(--accent-gold);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    border: 1px solid var(--accent-gold);
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+}
+
+.btn-submit:hover {
+    background: var(--accent-gold);
+    color: var(--primary-black);
+}
+
+/* Responsivo para móviles */
+@media (max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        padding: 120px 40px;
+    }
+}

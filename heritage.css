@@ -1,0 +1,121 @@
+/* --- REPARACIÓN GLOBAL --- */
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto; /* Asegura que el scroll vertical esté siempre habilitado */
+    height: auto;
+    scroll-behavior: smooth;
+}
+
+/* --- SECCIÓN HERO (UN SIGLO DE PERFECCIÓN) --- */
+.heritage-hero {
+    height: 80vh; /* Un poco más alto para impacto visual */
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), 
+                url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efecto parallax elegante */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+/* --- SECCIÓN DE LEGADO (HISTORIA, MISIÓN, VALORES) --- */
+.legacy-section {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 0 40px;
+}
+
+.legacy-item {
+    display: flex;
+    margin-bottom: 80px;
+    align-items: flex-start;
+    border-left: 2px solid var(--accent-gold);
+    padding: 40px;
+    position: relative;
+    /* Diseño de carta */
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 24px;
+    transition: all 0.5s ease;
+}
+
+.legacy-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateX(10px);
+    border-left: 2px solid #fff; /* Cambio de color al hover */
+}
+
+/* El punto en la línea de tiempo */
+.legacy-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 50px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent-gold);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent-gold);
+}
+
+.legacy-year {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--accent-gold);
+    min-width: 120px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.legacy-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.legacy-text p {
+    color: #aaa;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+/* Estilo para los valores */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.value-tag {
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    color: var(--accent-gold);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.value-tag:hover {
+    background: var(--accent-gold);
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .legacy-item {
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    .legacy-year {
+        margin-bottom: 10px;
+    }
+}

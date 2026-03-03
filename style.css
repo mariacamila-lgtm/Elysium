@@ -1,0 +1,29 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-background{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content{
+    position: center;
+    z-index: 1;
+    color: #737373;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content a{
+    color: rgb(39, 37, 146);
+}

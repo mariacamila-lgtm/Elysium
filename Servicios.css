@@ -1,0 +1,179 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-servicios {
+    background-color: #000;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    letter-spacing: 8px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+
+.header-servicios {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;      
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+
+.capa-gradiente {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+    z-index: 1;
+}
+
+
+.contenido-header {
+    position: relative;
+    z-index: 2;
+}
+
+.tag-oro {
+    color: #c5a059;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.contenido-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 8vw, 5rem);
+    color: #fff;
+    margin: 15px 0;
+    font-weight: 400;
+}
+
+.capa-oscura {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.9));
+}
+
+.contenido-servicios {
+    position: relative;
+    z-index: 5;
+}
+
+.subtitulo-oro {
+    color: #c5a059;
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.titulo-principal {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+/* Grid de Cards */
+.contenedor-cards {
+    padding: 100px 5%;
+    background-color: #000;
+}
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.card-lujo {
+    background: #0d0d0d;
+    padding: 50px 35px;
+    border: 1px solid #1a1a1a;
+    transition: all 0.4s ease;
+}
+
+.card-lujo:hover {
+    border-color: #c5a059;
+    transform: translateY(-10px);
+}
+
+.numero-card {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: rgba(243, 242, 240, 0.411);
+    display: block;
+    margin-bottom: 15px;
+}
+
+.card-lujo h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.card-lujo p {
+    color: #999;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.lista-detalles {
+    list-style: none;
+    border-top: 1px solid #222;
+    padding-top: 15px;
+}
+
+.lista-detalles li {
+    color: #c5a059;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
